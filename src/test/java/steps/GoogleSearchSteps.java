@@ -45,11 +45,15 @@ public class GoogleSearchSteps extends googleBase {
 	@When("I enter search {string}")
 	public void i_enter_search(String testData) {
 		
-		//WebElement searchBx;
+		/*
 		
-		//searchBx = driver.findElement(By.name("q"));
+		WebElement searchBx;
 		
-		//searchBx.sendKeys(testData);;
+		searchBx = driver.findElement(By.name("q"));
+		
+		searchBx.sendKeys(testData);;
+		
+		*/
 		
 		gh = new googlePages(driver); //create object to link GooglePages
 
@@ -59,11 +63,15 @@ public class GoogleSearchSteps extends googleBase {
 	@When("I click on google search button")
 	public void i_click_on_google_search_button() {
 	    
-		//WebElement searchBtn;
+		/*
+		
+		WebElement searchBtn;
 	    
-		//searchBtn = driver.findElement(By.name("btnK"));
+		searchBtn = driver.findElement(By.name("btnK"));
 	    
-	    //searchBtn.click();
+	    searchBtn.click();
+	     
+	     */
 	   
 		gh.clickSearch(); //create object to link GooglePages
 	}
@@ -71,19 +79,23 @@ public class GoogleSearchSteps extends googleBase {
 	@Then("I receive related search results")
 	public void i_receive_related_search_results() {
 	    
-		//WebElement resultStats;
+		/*
+
+		WebElement resultStats;
+		 
+		resultStats = driver.findElement(By.id("result-stats"));
 	
-		//resultStats = driver.findElement(By.id("result-stats"));
-	
-		//String results = resultStats.getText();
+		String results = resultStats.getText();
 		
-		//System.out.println("===============================================");
+		System.out.println("===============================================");
 	
-		//System.out.println(results);
+		System.out.println(results);
 			
-		//System.out.println("===============================================");
+		System.out.println("===============================================");
 		
-		//driver.close(); //closes the current window once test is finished. 
+		driver.close(); //closes the current window once test is finished. 
+		 
+		*/
 
 		//Update after creating GoogleBase and GooglePages
 		
